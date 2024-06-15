@@ -80,34 +80,106 @@ export default function Home() {
               <QrScanner
                   onScan={handleScan}
                   onError={handleError}
-
-                  /** Default props
-                  onError = (error) => console.log({error}),
-                  onScan = (value) => console.log({value}),
-                  facingMode = 'environment', // environment|face
-                  constraints = null, //device constraints
-                  onLoad = (val :{mirrorVideo, streamLabel}) => null,
-                  flipHorizontally = false, //flip or reflect the video output based on facing mode
-                  style, //section styling can be added here
-                  className, //classnames will be added to the section wrapper
-                  delay = 800, //delay between each scan
-                  resolution = 600, //canvas resolution
-                  aspectRatio = '16:9',
-                  showViewFinder = true,
-                  viewFinder = { //any valid JS-CSS can be added here
-                      border: '12px solid rgba(255,255,255,0.3)',
-                      position: 'absolute',
-                      borderRadius: '5px',
-                      width: '250px',
-                      height: '250px'
-                  }
-                  */
               />
             </div>
           );
         }
         `}
         </SyntaxHighlighter>
+
+        <div className='p-5 '>
+
+        <table className="w-full border border-collapse">
+          <thead>
+            <tr className="bg-gray-200">
+              <th className="border p-2">Prop Name</th>
+              <th className="border p-2">Type</th>
+              <th className="border p-2">Default Value</th>
+              <th className="border p-2">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border p-2">onError</td>
+              <td className="border p-2">Function</td>
+              <td className="border p-2">{`(error) => console.log({error})`}</td>
+              <td className="border p-2">Callback function that is called when an error occurs during scanning.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">onScan</td>
+              <td className="border p-2">Function</td>
+              <td className="border p-2">{`(value) => console.log({value})`}</td>
+              <td className="border p-2">Callback function that is called when a QR code is successfully scanned.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">facingMode</td>
+              <td className="border p-2">String</td>
+              <td className="border p-2">'environment'</td>
+              <td className="border p-2">The facing mode of the camera. Can be set to 'environment' or 'face'.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">constraints</td>
+              <td className="border p-2">Object</td>
+              <td className="border p-2">null</td>
+              <td className="border p-2">The device constraints for the camera.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">onLoad</td>
+              <td className="border p-2">Function</td>
+              <td className="border p-2">{`(val: {mirrorVideo, streamLabel}) => null`}</td>
+              <td className="border p-2">Callback function that is called when the component is loaded.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">flipHorizontally</td>
+              <td className="border p-2">Boolean</td>
+              <td className="border p-2">false</td>
+              <td className="border p-2">Determines whether the video output should be flipped or reflected based on the facing mode.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">style</td>
+              <td className="border p-2">Object</td>
+              <td className="border p-2">null</td>
+              <td className="border p-2">Additional styling for the section.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">className</td>
+              <td className="border p-2">String</td>
+              <td className="border p-2">null</td>
+              <td className="border p-2">Additional class names for the section wrapper.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">delay</td>
+              <td className="border p-2">Number</td>
+              <td className="border p-2">800</td>
+              <td className="border p-2">The delay between each scan attempt in milliseconds.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">resolution</td>
+              <td className="border p-2">Number</td>
+              <td className="border p-2">600</td>
+              <td className="border p-2">The resolution of the canvas in pixels.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">video</td>
+              <td className="border p-2">Object</td>
+              <td className="border p-2">{`{ width: '50%', height: '85%' }`}</td>
+              <td className="border p-2">Additional CSS styles for the video element.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">showViewFinder</td>
+              <td className="border p-2">Boolean</td>
+              <td className="border p-2">true</td>
+              <td className="border p-2">Determines whether to show the viewfinder.</td>
+            </tr>
+            <tr>
+              <td className="border p-2">viewFinder</td>
+              <td className="border p-2">Object</td>
+              <td className="border p-2">{`{ border: '12px solid rgba(255,255,255,0.3)', position: 'absolute', borderRadius: '5px', width: '250px', height: '250px' }`}</td>
+              <td className="border p-2">Additional CSS styles for the viewfinder element.</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
       </div>
 
       
