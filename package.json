@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.0.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-qrcode-scanner": "^1.1.6",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-qrcode-scanner": "^1.2.3",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
